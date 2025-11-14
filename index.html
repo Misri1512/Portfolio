@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analyst Portfolio</title>
+    <style>
+        /* Global */
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f3f5f7;
+            color: #222;
+        }
+        a { text-decoration: none; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        .hero p { font-size: 1.2rem; width: 70%; }
+        .btn-primary {
+            background: #00c4cc;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .btn-primary:hover { background: #009ba1; }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 20px;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* About */
+        .about {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            gap: 40px;
+        }
+        .about-text { max-width: 500px; }
+        .about-text p { line-height: 1.7; }
+        .about img {
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px 40px;
+        }
+        .skill-box {
+            width: 220px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project-card h3 { margin-top: 15px; }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Misri Bhagat</h1>
+        <p>Data Analyst • Excel Specialist • SQL Enthusiast • Power BI Explorer</p>
+        <a href="#projects" class="btn-primary">View My Work</a>
+    </div>
+
+    <!-- About -->
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6" />
+        <div class="about-text">
+            <p>
+                I am a detail-oriented Data Analyst passionate about turning raw data into meaningful insights.
+                I specialize in Excel, SQL, and dashboard creation. I enjoy solving business problems through
+                data analysis and visualization.
+            </p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill-box">Excel & Google Sheets</div>
+        <div class="skill-box">SQL (Joins, Aggregations)</div>
+        <div class="skill-box">Data Cleaning</div>
+        <div class="skill-box">Power BI / Tableau</div>
+        <div class="skill-box">Data Research</div>
+        <div class="skill-box">Reporting & Analysis</div>
+    </div>
+
+    <!-- Projects -->
+    <h2 class="section-title" id="projects">Projects</h2>
+    <div class="projects">
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" />
+            <h3>Sales Dashboard</h3>
+            <p>Built a dynamic Excel dashboard for analyzing regional sales patterns.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2" />
+            <h3>Customer Segmentation</h3>
+            <p>Performed clustering to identify key customer segments.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0" />
+            <h3>Data Cleaning Automation</h3>
+            <p>Created SQL scripts to clean and standardize raw datasets.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Misri Bhagat | Data Analyst Portfolio
+    </footer>
+</body>
+</html>
